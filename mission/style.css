@@ -1,0 +1,60 @@
+.all{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 60px 100px 40px 100px;
+    background: white;
+    border: 1px solid #ddd;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.title h1{
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: #006EB6;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ddd;
+    
+}
+
+.text{
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 20px;   
+}
+
+p em{
+    font-size: 20px;
+}
+
+.bullet{
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 40px;
+    margin-bottom: 60px;
+}
+
+.bullet li{
+    margin-bottom: 20px;
+}
+
+footer img{
+    display: block;
+    align-items: center;
+    width: 150px;
+    margin: 20px auto 0 auto;   
+}
