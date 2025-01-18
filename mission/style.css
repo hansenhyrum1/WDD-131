@@ -1,4 +1,4 @@
-.all{
+body{
     max-width: 600px;
     margin: 20px auto;
     padding: 60px 100px 40px 100px;
@@ -57,4 +57,13 @@ footer img{
     align-items: center;
     width: 150px;
     margin: 20px auto 0 auto;   
+}
+
+.dark{
+    background-color: #333;
+    color: white;
+}
+
+.dark h2{
+    color: #A0D4ED;
 }
