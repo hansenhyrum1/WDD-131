@@ -51,3 +51,23 @@ a {
     color: white;
 }
 
+main{
+    text-align: center;
+    background-color: var(--body-color);
+}
+
+h2{
+    font-family: var(--body-font);
+    font-size: 36px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+img{
+    border: 10px, solid, white;
+    box-shadow: 3px 3px 3px 3px black;
+    max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}
