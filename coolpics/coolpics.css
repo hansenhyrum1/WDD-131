@@ -7,11 +7,15 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-* {
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 ul{
     list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 0rem 1rem 1rem 1rem;
     margin: 0px;
     font-size: 28px;
@@ -63,6 +67,19 @@ h2{
     padding: 2rem;
 }
 
+figure{
+    margin: 0;
+    padding: 1rem;
+}
+
+figure:first-of-type{
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+figure:last-of-type{
+    padding: 1rem 1rem 3rem 1rem;
+}
+
 img{
     border: 10px, solid, white;
     box-shadow: 3px 3px 3px 3px black;
@@ -70,4 +87,31 @@ img{
     object-fit: cover;
     height: 250px;
     width: 250px;
+    margin: 0;
+}
+
+footer{
+    background-color: var(--header-color);
+    color: white;
+    padding: 1rem;
+}
+
+@media screen and (min-width:700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media screen and (min-width:1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    button{
+        display: none;
+    }
+
+    ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
