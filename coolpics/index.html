@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coolpics Photo Gallery Website</title>
-    <meta description="This is a gallery of different cool photos and an example of how the webpage can change based on the size parameters of the website itself.">
+    <meta name="description" content="This is a gallery of different cool photos and an example of how the webpage can change based on the size parameters of the website itself.">
     <meta author="Hyrum Hansen">
     <link rel="stylesheet" href="coolpics.css">
     <script src="coolpics.js" defer></script>
-    <a href="https://hansenhyrum1.github.io/WDD-131/coolpics/index.html">Coolpics</a>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mooli&display=swap">
+    <a href="https://hansenhyrum1.github.io/WDD-131/coolpics/index.html">Coolpics</a>
 </head>
 <body>
+    <!-- <div class="modal">
+        <button class="cButton">X</button>
+        <img src="norris-sm.jpeg" alt="higher quality picture">
+    </div> -->
     <header>
        <h1 class="title">Cool Pics 📷</h1> 
        <nav>
-            <button>Menu</button>
-                <ul>
+            <button id="mButton">Menu</button>
+                <ul id="menu" class="hide">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="people.html">People</a></li>
                     <li><a href="places.html">Places</a></li>
