@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap);
+
+:root{
+    --gold-color: #efc69b;
+    --red-color: #af1b3f;
+    --dark-color: #473144;
+    --body-font: Helvetica, Arial, sans-serif;
+    --headline-font: "Lora", Impact, serif;       
+}
+
+head a {
+    display: none;
+}
+
+header{
+    text-align: center;
+    margin: 3rem;
+    font-size: larger;
+    font-family: var(--headline-font);
+}
+
+.skiptocontent a{
+    position: absolute;
+    left: -9999px;
+    background-color: var(--dark-color);
+    color: var(--gold-color);
+}
+
+.skiptocontent a:focus {
+    left: 0px;
+}
+
+nav {
+    border-top: 2px solid var(--gold-color);
+    border-bottom: 2px solid var(--gold-color);
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+    justify-items: end;
+    list-style: none;
+    padding: 0rem 6rem;
+    font-size: large;
+}
+
+.menu a{
+    color: var(--red-color);
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem;
+}
+
+.books p {
+    font-family: var(--body-font);
+}
+
+.book_1, .book_2 {
+    display: contents;
+}
+
+.metadata {
+    grid-column: 1;
+    padding: 0rem 2rem;
+    justify-content: end;
+    justify-items: end;
+    font-family: var(--body-font);
+}
+
+.content {
+    grid-column: 2;
+    border-left: 2px solid var(--gold-color);
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.content h2{
+    margin-top: 0rem;
+    font-family: var(--headline-font);
+    color: var(--red-color);
+}
+
+.content img {
+    display: block;
+    margin: 0 auto;
+}
+
+.more {
+    font-family: var(--body-font);
+    color: var(--red-color);
+}
+
+.filter p {
+    border: 2px solid var(--gold-color);
+    margin: 3rem;
+    padding: 1rem 5rem 40rem 0rem;
+}
