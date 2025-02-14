@@ -31,6 +31,8 @@ header{
 }
 
 nav {
+    max-width: 1500px;
+    margin: 0 auto;
     border-top: 2px solid var(--gold-color);
     border-bottom: 2px solid var(--gold-color);
 }
@@ -53,12 +55,29 @@ nav {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.metadata {
+    grid-column: 1;
+    padding: 0 2rem 0 0;
+    justify-content: end;
+    justify-items: end;
+    font-family: var(--body-font);
+    line-height: 0.5rem;
+}
+
+.date{
+    margin: 1rem 0;
+    font-size: 20px;
 }
 
 .books {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 .books p {
@@ -69,19 +88,11 @@ main {
     display: contents;
 }
 
-.metadata {
-    grid-column: 1;
-    padding: 0rem 2rem;
-    justify-content: end;
-    justify-items: end;
-    font-family: var(--body-font);
-}
-
 .content {
     grid-column: 2;
     border-left: 2px solid var(--gold-color);
     padding: 0rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .content h2{
