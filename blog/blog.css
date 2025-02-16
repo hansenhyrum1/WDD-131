@@ -84,7 +84,7 @@ main {
     font-family: var(--body-font);
 }
 
-.book_1, .book_2 {
+.book {
     display: contents;
 }
 
