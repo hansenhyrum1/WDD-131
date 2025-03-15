@@ -91,6 +91,7 @@ main {
 .tag {
     border: 2px solid black;
     padding: 0.5rem;
+    margin-right: 1rem;
 }
 
 .recipe-title {
