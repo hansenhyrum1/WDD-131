@@ -27,3 +27,25 @@
   --nav-hover-link-color: var(--accent1-color);
   --nav-hover-background-color: var(--secondary-color);
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+header img {
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
