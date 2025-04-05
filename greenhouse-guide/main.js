@@ -24,3 +24,42 @@ function plantTemplate(plant) {
             <p><strong>Deer Resistance:</strong> ${plant.deer_resistance}</p>
         </section>`;
 }
+
+function renderPlants(plantList) {
+  const plantContainer = document.querySelector(".plant-card");
+  const plantHTML = plantList.map((plant) => plantTemplate(plant)).join("");
+  plantContainer.innerHTML = plantHTML;
+}
+
+function init() {
+  const randomPlant = getRandomPlant();
+  renderPlants([randomPlant]);
+
+  const searchInput = document.querySelector(".search")
+  searchInput.addEventListener("submit", searchHandler);
+}
+
+function filter(query) {
+  const filtered = plants.filter(plant => {
+      return (
+          plant.name.toLowerCase().includes(query) ||   
+          plant.color.toLowerCase().includes(query)
+      );
+  });
+
+  const sorted = filtered.sort();
+  
+  return sorted;
+
+}
+
+function searchHandler(e) {
+  e.preventDefault();
+  const searchInput = document.querySelector("#search-bar").value;
+  const query = searchInput.toLowerCase();
+  const filteredPlants = filter(query);
+  renderPlants(filteredPlants);
+}
+
+
+document.addEventListener("DOMContentLoaded", init);
